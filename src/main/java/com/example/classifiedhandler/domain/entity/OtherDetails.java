@@ -8,15 +8,18 @@ import lombok.Data;
 
 import java.util.List;
 
+
+
+
 @Embeddable
 public class OtherDetails {
-   private FurnishedEnum  detailsFurnished;
 
-   @ElementCollection
+
+   private String roomType;//furshned/unfurnished
    private List<String> amenities;
    private String vegOrNon_VegOrBoth;
    private SmokeEnum smoke;
-   private PetFriendly petFriendly;
+   private String petFriendly;//dog allowed/not-allowed
 
 
 }
